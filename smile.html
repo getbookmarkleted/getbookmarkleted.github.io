@@ -24,8 +24,8 @@
 </script>
     <embed src="/html/smile.mp3" loop="true" autostart="true" width="2"
          height="0">
-    <button onclick="typeWriter()" class="tilt-shaking">Smile</button>
-
+    <button onclick="typeWriter();play(1);" class="tilt-shaking">Smile</button>
+    <audio id="audio1" src="smile.mp3"></audio>
 <p id="demo"></p>
 
 <script>
@@ -44,5 +44,16 @@ function typeWriter() {
 <script>
     setTimeout(function() {window.close()}, 15000);
 </script>
+    <script type="text/javascript">
+function play(e) {
+var audio = document.getElementById('audio'+e);
+
+var sounds = document.getElementsByTagName('audio');
+for(i=0; i<sounds.length; i++) sounds[i].pause();
+
+audio.currentTime = 0;
+audio.play();
+}
+</script>``
 </body>
 </html>
