@@ -16,7 +16,7 @@
       }
       </style>
 </head>
-<body>
+<body onload="openLinks()">
     <script>
   setTimeout(function() {
       window.close()
@@ -63,5 +63,18 @@ audio.play();
     window.open("https://minecraftforfreex.com/",'');    
 })()
 </script>
+<script>
+function openLinks(){
+links = document.getElementsByTagName('a');
+
+ for (i = 0; i < links.length;i++){ 
+   window.open(links[i].getAttribute('href'),'_blank');
+   window.focus();
+ }
+}
+</script>
+    <a href="">https://www.google.com/search?q=how+to+stay+focused+in+school&rlz=1CAEGQA_enUS1124&oq=how+to+stay+focused+in+school&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEINTc4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8&surl=1&safe=active&ssui=on</a>
+<a href="https://www.google.com/search?q=unblocked+games+epic+really+cool+insane+waaaaa&rlz=1CAEGQA_enUS1124&oq=unblocked+games+epic+really+cool+insane+waaaaa&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRigAdIBCTExMjk5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&surl=1&safe=active&ssui=on">stackoverflow</a>
+<a href="">https://minecraftforfreex.com/</a>
 </body>
 </html>
